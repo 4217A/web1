@@ -2,13 +2,8 @@ html,
 body {
   height: 100%;
   width: 100%;
-  overflow-x: hidden; /* so text stays in browser */
-  font-family: "Roboto", sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #222;
-}
-
-.offset-top {
-  padding-top: 3.7em;
 }
 
 .clickwrap {
@@ -19,25 +14,18 @@ body {
   padding-bottom: 2rem;
 }
 
-/* ******* ******* ******* */
-/* ******* navbar ******* */
 .navbar {
-  padding-left: 0.47rem;
-  text-transform: uppercase;
-  letter-spacing: 0.07rem;
-  background-color: rgba(255, 255, 255, 0.97) !important;
+  padding: 0.47rem;
 }
 
 .navbar-nav li {
-  padding-left: 0.7rem;
+  padding-right: 1rem;
 }
 
 .nav-link {
   font-size: 17px !important;
 }
 
-/* ******* ******* ******* */
-/* ******* Home ******* */
 .carousel-inner img {
   height: 100%;
   width: 100%;
@@ -46,137 +34,176 @@ body {
 .carousel-caption {
   position: absolute;
   top: 50%;
-  transform: translateY(-40%);
+  transform: translateY(-50%);
 }
 
 .carousel-caption h1 {
-  /* pos */
-  width: 70%; /* with margin below */
-  margin: 0 auto; /*center section*/
-  padding-bottom: 0.47rem;
-  /* font */
   font-size: 70px;
-  font-weight: 700;
-  text-shadow: 2px 2px 7px #444;
-  /* border */
-  border: 2.7px solid white;
-  box-shadow: 2px 2px 7px #444;
+  text-shadow: 1px 1px 15px #222;
 }
 
 .carousel-caption h3 {
-  /* pos */
-  padding-top: 0.27rem;
-  padding-bottom: 0.27rem;
-  /* font */
   font-size: 30px;
   font-weight: 500;
-  text-shadow: 2px 2px 9px #333;
+  text-shadow: 1px 1px 10px #222;
+  padding-bottom: 1rem;
 }
 
-.btn-light {
-  /* border */
-  box-shadow: 2px 2px 7px #444;
-}
-
-.btn-light:hover {
-  /* color */
-  border-color: #ffae00;
-  background-color: #ffae00;
-  color: white;
-}
-
-/* ******* ******* ******* */
-/* ******* Locations ******* */
 .jumbotron {
   padding-top: 4.7rem;
-  padding-bottom: 4.7rem;
+  padding-bottom: 4rem;
+  margin-bottom: 0;
+  border-radius: 0;
 }
 
-.jumbotron hr {
-  width: 20%;
-}
-
-/* ******* ******* ******* */
-/* ******* Ingredients ******* */
-.ingredients {
-  /* pos */
-  width: 70%; /* with margin below */
+.projectsection {
+  width: 70%;
   margin: 0 auto; /*center section*/
+  padding-top: 4rem;
 }
 
-.ingredients p {
-  /* pos */
-  padding-bottom: 3.7rem;
+.projectsection hr {
+  border-top: 2px solid #53a3d9;
+  width: 90%;
+  margin-bottom: 1rem;
 }
 
+/*cards*/
 .d-flex {
   margin-bottom: 1rem;
 }
 
-.card {
-  width: 100%;
+.btn-primary {
+  background-color: #53a3d9;
+  border: 1px solid #53a3d9;
 }
 
-/* ******* ******* ******* */
-/* ******* Locations ******* */
+.btn-primary:hover {
+  background-color: #53d2d9;
+  border: 1px solid #53d2d9;
+}
+
+.btn-outline-secondary {
+  margin-top: 1rem !important;
+  border: 1px solid #a797ae;
+}
+
+.btn-outline-secondary:hover {
+  background-color: #a797ae;
+  border: 1px solid #a797ae;
+}
+
 footer {
   background-color: #3f3f3f;
   color: #dad9d7;
   padding-top: 2rem;
 }
 
-footer hr {
-  border-top: 1px solid white;
+footer a {
+  color: #dad9d7;
+}
+
+footer a:hover {
+  color: #dad9d7;
+}
+
+hr.light {
+  border-top: 1px solid #dad9d7;
   width: 75%;
+}
+
+hr.light-100 {
+  border-top: 1px solid #d5d5d5;
+  width: 100%;
 }
 
 /*--- Media Queries --*/
 /*--- mobile first! --*/
 @media (min-width: 993px) {
-}
-
-@media (max-width: 992px) {
-  .nav-link {
-    font-size: 14px !important;
+  .carousel-caption {
+    position: absolute;
+    top: 47%;
   }
 
   .carousel-caption h1 {
-    /* font */
-    font-size: 50px;
-    font-weight: 500;
+    font-size: 60px;
   }
 
-  .offset-top {
-    padding-top: 3.5em;
+  .carousel-caption h3 {
+    font-size: 30px;
+    font-weight: 400;
+    padding-bottom: 0rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .carousel-caption {
+    position: absolute;
+    top: 45%;
+  }
+
+  .carousel-caption h1 {
+    font-size: 70px;
+  }
+
+  .carousel-caption h3 {
+    font-size: 30px;
+    font-weight: 400;
+    padding-bottom: 0rem;
   }
 }
 
 @media (max-width: 768px) {
-  .nav-link {
-    font-size: 12px !important;
+  .carousel-caption {
+    position: absolute;
+    top: 40%;
   }
 
   .carousel-caption h1 {
-    /* font */
-    font-size: 40px;
-    font-weight: 500;
+    font-size: 50px;
   }
 
-  .offset-top {
-    padding-top: 3.5em;
+  .carousel-caption h3 {
+    font-size: 20px;
+    font-weight: 400;
+    padding-bottom: 0rem;
   }
 }
 
 @media (max-width: 576px) {
-  .carousel-caption h1 {
-    /* pos */
-    width: 100%; /* with margin below */
-    margin: 0 auto; /*center section*/
-    padding-bottom: 0.27rem;
-    /* font */
-    font-size: 35px;
-    font-weight: 500;
+  .carousel-caption {
+    position: absolute;
+    top: 40%;
   }
+
+  .carousel-caption h1 {
+    font-size: 40px;
+  }
+
+  .carousel-caption h3 {
+    font-size: 20px;
+  }
+
+  .projectsection {
+    width: 70%;
+    margin: 0 auto; /*center section*/
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+  }
+}
+
+/*---Firefox Bug Fix --*/
+.carousel-item {
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+}
+
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+  padding: 1rem;
 }
 
 /* Below are the built in Bootstrap breakpoints for screen sizes (responsive layout) */
